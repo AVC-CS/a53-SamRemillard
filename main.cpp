@@ -9,7 +9,7 @@ int main()
     while (1){
         cout << "Enter begin and end values: ";
         cin >> begin >> end;
-        if (begin < end)
+        if (begin <= end)
             break;
     }
     
