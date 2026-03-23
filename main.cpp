@@ -6,6 +6,21 @@ int main()
 {
     int i, begin, end, sum = 0;
 
-    // TODO: prompt user for begin and end values
-    // TODO: loop from begin to end and accumulate sum of even values
+    while (1){
+        cout << "Enter begin and end: ";
+        cin >> begin >> end;
+        if (begin < end)
+            break;
+    }
+
+    if (begin % 2 == 1)
+        begin ++;
+    i = begin;
+    while (i <= end){
+        sum += i;
+        i += 2;
+    }
+
+    cout << "Total is " << sum << endl;
+    return 0;
 }
